@@ -1,0 +1,173 @@
+@import '../resources/mixins';
+
+.drawer {  
+    &__label {
+      font-weight: 300;
+      line-height: 20px;
+      font-size: 14px;
+      color: #737580;
+      display: block;
+      margin-bottom: 8px;
+    }
+    &__block_list {
+      margin-bottom: 24px;    
+    }    
+    .ant-drawer-content {
+      padding: 20px;      
+    }
+    .ant-drawer-content-wrapper {
+      height: auto !important;
+    }
+    .ant-drawer-content, .ant-drawer-content-wrapper {
+      border-radius: 20px 20px 0 0;
+    }
+    .ant-checkbox-wrapper {
+      display: block !important;
+      + .ant-checkbox-wrapper {
+        margin-left: 0 !important;
+      }
+    }
+  }
+  .drawer-filter {
+    .ant-drawer-content {
+      padding: 22px 20px 20px 20px;
+    }
+    .ant-drawer-title {
+        display: none;
+      text-align: center;
+      font-size: 16px;
+    }
+    .ant-drawer-header {
+      position: relative;
+      margin-bottom: 24px;
+      border-bottom: none;
+      padding: 0;
+      &:before {
+        content: "";
+        height: 4px;
+        width: 40px;
+        background: #edecf3;
+        border-radius: 2px;
+        display: block;
+        margin: 0 auto 20px;
+      }
+    }
+    .ant-drawer-body {
+      padding: 0 !important;
+    }
+  }
+  .drawer-action {
+    margin-top: 20px;  
+    .btn {
+      text-align: center;
+      font-size: 14px;
+      letter-spacing: 0.14px;
+      height: 36px;
+      display: inline-flex;
+      justify-content: center;
+      font-family: $base__font-family-mobile;
+      font-weight: 500;
+      &:first-child {
+        max-width: 78px;
+      }
+      &:last-child {
+        width: auto;
+      }
+    }
+  }    
+  .drawer-delete {
+    margin-top: 20px;  
+    .btn {
+      text-align: center;
+      font-size: 14px;
+      letter-spacing: 0.14px;
+      height: 36px;
+      display: inline-flex;
+      justify-content: center;
+      font-family: $base__font-family-mobile;
+      font-weight: 500;
+      // &:first-child {
+      //   max-width: 78px;
+      // }
+      // &:last-child {
+      //   width: auto;
+      // }
+    }
+  }  
+    .ant-drawer-title {
+      margin: 0;
+      color: #474955;    
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 22px;
+    }      
+    .ant-drawer-header {
+      position: relative;    
+      color: rgba(0, 0, 0, 0.65);
+      background: #fff;    
+      line-height: normal;
+      margin-bottom: 8px;
+      border: none;
+      padding: 0;
+    }    
+    .ant-drawer-body {          
+      padding: 0;
+      > p {
+        margin: 0;
+        color: #737580;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 18px;
+      }
+    }
+
+    .drawer-media {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 30px;
+        img {
+            width: 54px;
+            height: 54px;
+        }
+        p {
+          margin-top: 5px;
+            margin-left: 12px;
+            font-size: 12px;
+            line-height: 14px;
+            color: $charcoal-grey;
+            font-family: $base__font-family-mobile;
+        }
+    }
+
+    .drawer-price-order {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      div {
+        &:first-child {
+          span {          
+            &:first-child {
+              margin-bottom: 4px;
+            }  
+            &:last-child {
+              font-size: 16px;
+              font-weight: 600;
+              color: #f04b32;
+            }
+          }
+        }
+      }
+      span {
+        font-size: 12px;
+        line-height: 14px;
+        color: #b0b2bb;     
+        display: block;   
+      }      
+    }
+.ant-drawer > *, .ant-drawer-open { 
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.9, 0, 0.3, 0.7) !important;
+  transition: -webkit-transform 0.1s cubic-bezier(0.9, 0, 0.3, 0.7) !important;
+  transition: transform 0.1s cubic-bezier(0.9, 0, 0.3, 0.7) !important;
+  transition: transform 0.1s cubic-bezier(0.9, 0, 0.3, 0.7), -webkit-transform 0.1s cubic-bezier(0.9, 0, 0.3, 0.7) !important;
+}

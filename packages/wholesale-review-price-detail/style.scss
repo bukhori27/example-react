@@ -1,0 +1,25 @@
+@import '../components/resources/mixins';
+
+.wholesale-review{
+    &-price-detail{
+        margin-bottom: 70px;
+        padding: 20px;
+        background-color: white;
+        &-title{
+            font-weight: 600;
+            font-size: 14px;
+            color: #474955;
+            padding-bottom: 1rem;
+        }
+        span{
+            font-size: 14px;
+            font-weight: 500;
+            color: #737580;
+        }
+    }
+}
+.text-notice {
+    font-size: 14px;
+    font-weight: 600;
+    color: #f04a32;
+}

@@ -1,0 +1,6 @@
+@import '../../components/resources/mixins';
+.wholesale-review-container{
+    .ant-spin-dot-item{
+        background-color: $qasir-orange !important;
+    }
+}

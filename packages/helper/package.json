@@ -1,0 +1,8 @@
+{
+    "name": "@example/helper",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "imam bukhori <bukhori27.imam@gmail.com>",
+    "license": "MIT"
+}
+  

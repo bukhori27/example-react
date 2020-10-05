@@ -1,0 +1,13 @@
+{
+    "name": "@example/mitra-content",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "imam bukhori <bukhori27.imam@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+      "@example/components": "1.0.0",
+      "@example/storage-local": "1.0.0",
+      "@example/routes": "1.0.0"
+    }
+  }
+  

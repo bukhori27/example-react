@@ -1,0 +1,10 @@
+{
+    "name": "@example/wholesale-review-address",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "imam bukhori <bukhori27.imam@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+      "@example/components" :"1.0.0"      
+    }
+  }

@@ -1,0 +1,12 @@
+{
+    "name": "@example/web",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "imam bukhori <bukhori27.imam@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+      "@example/store": "1.0.0",
+      "@example/components": "1.0.0",
+      "@example/mitra-content": "1.0.0"
+    }
+  }

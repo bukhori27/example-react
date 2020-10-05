@@ -1,0 +1,44 @@
+@import '../resources/mixins';
+
+.loading__shimmer {    
+    background-color: #ffffff;
+    border-bottom: 1px solid $gray-lighten;
+    &_list {
+        padding: 16px 20px;
+        border-bottom: 1px solid $gray-lighten;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    .ant-skeleton-avatar {
+        width: 56px !important;
+        height: 56px !important;
+        border-radius: 4px !important;
+    }
+    .ant-skeleton-title {        
+        margin-top: 0 !important;
+    }
+    .ant-skeleton-paragraph {
+        padding-left: 0;
+        margin-top: 10px !important;
+        margin-bottom: 0 !important;
+    }
+    .ant-skeleton-content .ant-skeleton-paragraph > li + li {
+        margin-top: 10px !important;
+    }
+}
+.shimmer-type-other {
+    padding-bottom: 10px !important;
+    border-bottom: 1px solid #eef0f2;
+    .wholesale-trolishopping-shimmer-left .ant-skeleton-title{
+        display: none !important;   
+    }
+    .ant-skeleton-title{
+        margin-bottom: 28px !important;
+    }
+    .ant-skeleton-paragraph{
+        li{
+            width: 69px !important;
+        }
+    }
+}

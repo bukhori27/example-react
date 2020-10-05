@@ -1,0 +1,72 @@
+@import '../resources/mixins';
+
+.qasir-navbar {
+    height: 56px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 987;
+    top: 0;
+    background-color: white;
+    &.bg-transparent {
+        background-color: transparent !important;
+    }
+    span {
+        color: $charcoal-grey;
+        font-size: 16px;
+        font-weight: 600;
+        width: 100%;
+        position: relative;
+        vertical-align: middle;
+        text-transform: capitalize;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;        
+    }    
+    > div {
+        display: flex;
+        justify-content: flex-end;
+        a {
+            position: relative;
+            padding: 1rem .5rem 1rem 0;
+            &:last-child {
+                margin-left: 20px;
+            }
+            span {
+                position: absolute;
+                top: 4px;
+                right: -2px;
+                width: 20px;
+                height: 20px;
+                background-color: #ffa000;
+                font-size: 10px;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                color: #ffffff;
+                border-radius: 100%;
+                border: 2px solid #ffffff;
+            }
+            img {
+                width: 24px;
+            }
+        }
+    }
+    .header__arrow-link-back {
+        padding: 1rem 1rem 1rem 0;
+        img {
+            width: 20px;
+        }
+    }    
+}
+
+@media (min-width: 992px) {
+    .qasir-navbar {      
+        padding: 0 28px;  
+        width: auto;
+        left: 0;
+        right: 0;
+    }
+}

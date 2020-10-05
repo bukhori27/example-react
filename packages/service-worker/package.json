@@ -1,0 +1,12 @@
+{
+    "name": "@example/service-worker",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "author": "imam bukhori <bukhori27.imam@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+      "workbox-webpack-plugin": "^4.3.1"        
+    }
+}
+  

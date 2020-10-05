@@ -1,0 +1,30 @@
+let servicesConfig = {
+  base_url: process.env.HOST_API_URL,
+  // grocery
+  orders: "/grocery/carts",
+  categories: "/grocery/categories",
+  product: "/grocery/products",
+  user: "/grocery/users",
+  list_cart: "/grocery/carts/items",
+  detail_cart: "/grocery/carts",
+  update_cart: "/grocery/carts/items/{itemId}",
+  history_whole_sale: "/grocery/accessMarketPlace",
+  acces_market: "/grocery/marketPlace/{merchantId}",
+  detail_payment: "/grocery/orders/{paymentId}/payments",
+  update_shipping_date: "/grocery/carts/shippings",
+  store_voucher: "/grocery/cart/{CartId}/coupons/{CouponId}",
+  delete_voucher: "/grocery/coupon/{CouponId}",
+  store_order: "/grocery/orders",
+  cancel_order: "/grocery/orders/{orderId}/cancel",
+  check_status: "/grocery/payment-method/status",
+  list_product_flashdeal: "/grocery/products/promotions",
+  list_banner: "/grocery/banners",
+  detail_banner: "/grocery/banners/{bannerId}",
+  subdistricts: '/subdistricts',
+  store_outlet:'/outlet/store',
+  edit_user: '/edit/address/{merchantId}',
+  check_coupon: '/grocery/coupons/{Coupon}',
+  accessMarketPlace: '/v4/access/marketPlace',
+  detail_order: "/grocery/orders/{paymentId}"
+}
+export { servicesConfig };

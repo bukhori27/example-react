@@ -1,0 +1,36 @@
+@import '../resources/mixins';    
+.wholesale-review-voucher{    
+    .ant-form-item-required::before{
+        display: none !important;
+    }
+    .ant-form-item-label label::after {
+        display: none !important;
+    }
+    .ant-form-item-label{
+        position: absolute;
+        left: 1em;
+        top: -0.65em;
+        width: auto;
+        background: white;
+        padding: 0 .3rem;
+        z-index: 9;
+        line-height: 1.5;
+        label{
+            font-size: 12px !important;
+            color: $text-dark-number-soft !important;
+        }
+    } 
+    .ant-form-item-with-help{
+        margin-bottom: 10px !important;
+    }
+    .ant-form-explain{
+        font-size: 12px !important;
+        margin-top: .5em;
+    }
+    .ant-input{
+        height: 46px !important;
+        font-weight: 500 !important;
+        color: $gray-blue !important;
+        font-family: 'Monserrat', sans-serif !important;
+    }
+}

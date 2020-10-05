@@ -1,0 +1,33 @@
+<!doctype html><html lang="en"> <head> 
+  <meta http-equiv="x-ua-compatible" content="IE=edge"><meta name="url_orders" content="{{{urlOrders}}}"><meta name="base_url" content="{{{baseUrl}}}"><meta name="csrf_token" content="{{{csrfToken}}}"><meta name="merchant_id" content="{{{merchantId}}}"><meta name="app_version_code" content="{{{appVersionCode}}}"><meta name="outlet_code" content="{{{outletCode}}}"><meta name="app_version_source" content="{{{appVersionSource}}}"><meta name="api_secret_key" content="{{{apiSecretKey}}}"><meta name="client_secret" content="{{{clientSecret}}}"><meta name="url_lannister" content="{{{urlLannister}}}"><meta name="subdomain" content="{{{subdomain}}}"><meta charset="utf-8"><meta name="token_pos" content="{{{tokenPos}}}"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet"/> <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet"/><link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" /></head> <body><script src="{{{sdk_lannister}}}"></script><script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script> <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-analytics.js"></script><div id="application"></div><script >window.backPage = function(){AndroidFunction.backPage()}; window.closePage = function(){AndroidFunction.closePage()};window.openDetailTransaction = function(transactionId){ AndroidFunction.openDetailTransaction(transactionId)};
+  // Check that service workers are supported
+  console.log("navigator", navigator)
+  if ('serviceWorker' in navigator) {
+    var v2_v3= "mitra-wholesale-precache-v2-v3";
+    var v2_v4= "mitra-wholesale-precache-v2-v4";
+    var v2_v5= "mitra-wholesale-precache-v2-v5";
+    var v2_v6= "mitra-wholesale-precache-v2-v6";
+    var v2_v8= "mitra-wholesale-precache-v2-v8";
+    var v2_v9= "mitra-wholesale-precache-v2-v9";
+    var v2_v10= "mitra-wholesale-precache-v2-v10";
+    var v2_v11= "mitra-wholesale-precache-v2-v11";
+    var v2_v12= "mitra-wholesale-precache-v2-v12";
+    var v2_v13= "mitra-wholesale-precache-v2-v13";
+    var v2_v14= "mitra-wholesale-precache-v2-v14";
+    var v2_v15= "mitra-wholesale-precache-v2-v15";
+    var v2_v16= "mitra-wholesale-precache-v2-v16";
+    var v2_v17= "mitra-wholesale-precache-v2-v17";
+    var v2_v18= "mitra-wholesale-precache-v2-v18";
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames.map(function(cacheName) {
+          if (v2_v3.includes(cacheName) || v2_v4.includes(cacheName) || v2_v5.includes(cacheName) || v2_v6.includes(cacheName)|| v2_v8.includes(cacheName) || v2_v9.includes(cacheName)|| v2_v10.includes(cacheName) || v2_v11.includes(cacheName)|| v2_v12.includes(cacheName)|| v2_v13.includes(cacheName)|| v2_v14.includes(cacheName) || v2_v15.includes(cacheName)|| v2_v16.includes(cacheName)|| v2_v17.includes(cacheName)|| v2_v18.includes(cacheName)
+          ){
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
+    navigator.serviceWorker.register('/sw-example-react.js');
+  }
+  </script></body></html>

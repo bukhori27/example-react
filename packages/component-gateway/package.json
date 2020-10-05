@@ -1,0 +1,14 @@
+{
+    "name": "@example/component-gateway",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "imam bukhori <bukhori27.imam@gmail.com>",
+    "license": "ISC",
+    "dependencies": {
+      "@example/storage-local": "1.0.0"    
+    }
+  }

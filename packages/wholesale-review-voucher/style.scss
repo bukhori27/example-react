@@ -1,0 +1,131 @@
+@import '../components/resources/mixins';
+
+.wholesale-review-voucher{
+    padding: 20px 20px 0px 20px;
+    background-color: white;
+    .ant-input{
+        border-color: $charcoal-grey !important;
+        font-family: $base__font-family-mobile !important;
+    }
+    .input-error{
+        color: $qasir-orange !important;
+    }
+    &-title{
+        font-weight: 600;
+        font-size: 14px;
+        color: #474955;
+        padding-bottom: 1rem;
+    }
+    span{
+        font-size: 14px;
+        font-weight: 500;
+        color: #737580;
+    }
+    &-btn-cek{
+        background-color: $qasir-orange !important;
+        height: 46px !important;
+        font-family: 'Montserrat', sans-serif !important;
+        width: 90%;
+        border:  $qasir-orange !important;
+        &:hover,:active{
+            border-color: $qasir-orange !important;
+            color: white !important;
+        }
+        span{
+            color:white;
+            font-weight: 600;
+        }
+    }
+    &-btn-cek-error{
+        background-color: white !important;
+        height: 46px !important;
+        font-family: 'Montserrat', sans-serif !important;
+        width: 90%;
+        border-color:  $qasir-orange !important;
+        &:hover,:active{
+            border-color: $charcoal-grey !important;
+            color: white !important;
+        }
+        span{
+            color: $qasir-orange !important;
+            font-weight: 600;
+        }
+    }
+    &-btn-cek-disable{
+        background-color: $background-gray !important;
+        height: 46px !important;
+        font-family: 'Montserrat', sans-serif !important;
+        width: 90%;
+        color: $charcoal-grey !important;
+        border-color: $background-gray !important;
+        &:hover,:active{
+            border-color: $background-gray !important;
+            color: $charcoal-grey !important;
+        }
+        span{
+            color:$charcoal-grey;
+            font-weight: 600;
+        }
+    }
+    .ant-form-item {
+        margin-bottom: 0px !important;
+    }
+    .ant-row {
+        padding-bottom: 12px;
+    }
+    .failed {
+        color: $qasir-orange !important;
+    }
+    .default {
+        color: $charcoal-grey !important;
+    }
+    ::placeholder {
+        color: #e3e5ed !important;
+        opacity: 1 !important; /* Firefox */
+        font-family: $base__font-family-mobile !important;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #e3e5ed !important;
+        font-family: $base__font-family-mobile !important;
+    }
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: #e3e5ed !important;
+        font-family: $base__font-family-mobile !important;
+    }
+    &-icon-check{
+        position: absolute;
+        width: 20px;
+        top: 15px;
+        right: 10px;
+    }
+    &-icon-cross{
+        color: red !important;
+        font-size: 20px !important;
+        margin: auto !important;
+        font-weight: 700 !important;
+        text-align: center !important;
+        position: absolute !important;
+        top: 6px !important;
+        right: 15px !important;
+    }
+}
+.voucher-wrap-custom{
+    .ant-form-item-label .ant-form-item-required{
+        color: $charcoal-grey !important;
+    }
+    [ant-click-animating-without-extra-node='true']::after, .ant-click-animating-node{
+        display: none !important;
+    }
+    .ant-btn:hover, .ant-btn:focus{
+        border-color: $qasir-orange !important;
+        color: $qasir-orange !important;
+    }
+    .ant-spin-dot-item{
+        background: $qasir-orange !important;
+        width: 5px !important;
+        height: 5px !important;
+    }
+    .ant-spin-nested-loading > div > .ant-spin .ant-spin-dot{
+        left: 55% !important;
+    }
+}

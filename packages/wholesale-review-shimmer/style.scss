@@ -1,0 +1,99 @@
+@import '../components/resources/mixins';
+
+.shimmerReview{
+    &-voucher{
+        padding: 20px;
+        background-color: white;
+        &-text-field{
+            position: absolute;
+            z-index: 99999;
+            left: 10px;
+            top: -15px;
+            font-weight: 500;
+            background: white;
+            padding: 5px;
+            color: black;
+        }
+        &-title{
+            font-size: 14px;
+            font-weight: 600;
+            color: $charcoal-grey;
+            padding-bottom: 15px;
+        }
+        .ant-input{
+            height: 46px !important;
+            border: 1px solid $charcoal-grey;
+        }
+        &-btn-cek{
+            background-color: $background-gray !important;
+            width: 90% !important;
+            height: 46px !important;
+            font-family: 'Montserrat', sans-serif !important;
+            border-color: $background-gray !important;
+            &:hover,:active{
+                border-color: $background-gray !important;
+                color: white !important;
+            }
+            span{
+                color:white;
+                font-weight: 600;
+            }
+        }
+    }
+    .loading__shimmer-product{
+        .ant-skeleton{
+            border: none !important;
+        }
+        .ant-skeleton-title{
+            margin-bottom: 0 !important;
+        }
+        .ant-skeleton-content {
+            padding: 0 12px 0px 26px !important;
+        }
+    }
+    .wholesale__review-submit-btn{
+        .ant-skeleton-title{
+            height: 14px !important;
+            width: 60% !important;
+            margin-top: 6px !important;
+        }
+    }
+    .wholesale__review-submit-btn-button{
+        background-color: $background-gray !important;
+    }
+    ::placeholder {
+        color: #e3e5ed !important;
+        opacity: 1 !important; /* Firefox */
+    }
+    
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #e3e5ed !important;
+    }
+    
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: #e3e5ed !important;
+    }
+}
+.skeleton-dateshipping {
+    .ant-skeleton-title{
+        width: 96% !important;
+        height: 54px !important;
+        margin-top: 0 !important;
+    }
+    .ant-skeleton-paragraph{
+        display: none !important;
+    }
+}
+.distance-box{
+    margin-right: 3% !important;
+}
+.skeleton-timeshipping {
+    .ant-skeleton-title{
+        width: 96% !important;
+        height: 28px !important;
+        margin-top: 0 !important;
+    }
+    .ant-skeleton-paragraph{
+        display: none !important;
+    }
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="166" height="142" fill="none" viewBox="0 0 166 142">
+    <path stroke="#62666E" stroke-linecap="round" stroke-width="2" d="M79.5 10V1M83.577 12.934L89.5 7.02M74.423 12.934L68.5 7.02"/>
+    <ellipse cx="85" cy="123" fill="#E9E9E9" rx="71.5" ry="19"/>
+    <path fill="#B0B2BB" d="M78.5 92.5V26l67 7-67 59.5z"/>
+    <path fill="#C4C4C4" d="M16.5 39L85 46.5 145.5 33v80L85 131l-68.5-13V39z"/>
+    <path fill="#C4C4C4" d="M78.5 26l-62 13L79 83.5 78.5 26z"/>
+    <path fill="#D9D9DB" d="M105.5 80.5l-21-34 61-13.5 20 30-60 17.5z"/>
+    <mask id="a" width="130" height="98" x="16" y="33" maskUnits="userSpaceOnUse">
+        <path fill="#CED0D5" d="M16.5 39L85 46.5 145.5 33v80L85 131l-68.5-13V39z"/>
+    </mask>
+    <g mask="url(#a)">
+        <path fill="#B0B2BB" d="M16.5 39h68v92h-68z"/>
+    </g>
+    <path fill="#C6C7CB" d="M20.5 109.198a1 1 0 0 1 1.178-.984l12 2.175c.476.087.822.501.822.984v6.429a1 1 0 0 1-1.178.984l-12-2.175a1.001 1.001 0 0 1-.822-.984v-6.429z"/>
+    <circle cx="111.5" cy="86" r="2" fill="#62666E"/>
+    <circle cx="129.5" cy="83" r="2" fill="#62666E"/>
+    <path fill="#BDBFC9" d="M69 80.5l15.5-34-68-7.5L0 67l69 13.5z"/>
+    <path stroke="#62666E" stroke-linecap="round" stroke-width="2" d="M116.5 99s.788-5.892 6.5-6.874c5.712-.982 6.5 4.117 6.5 4.117"/>
+</svg>

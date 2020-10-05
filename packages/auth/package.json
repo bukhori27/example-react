@@ -1,0 +1,11 @@
+{
+    "name": "@example/auth",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "imam bukhori <bukhori27.imam@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "@example/storage-local": "1.0.0",        
+        "@example/config": "1.0.0"
+    }
+}

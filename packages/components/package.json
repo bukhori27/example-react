@@ -1,0 +1,16 @@
+{
+  "name": "@example/components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.9.0",
+    "mini-css-extract-plugin": "^0.4.0",
+    "sass-loader": "^7.0.1"
+  },
+  "dependencies": {
+    "@example/component-gateway": "1.0.0",
+    "string-mask": "0.3.0",        
+    "blazy": "1.8.2"
+  }
+}

@@ -1,0 +1,129 @@
+@import '../components/resources/mixins';
+
+.wholesale-review-time-receipt{
+    background-color: white;
+    &-wrap{
+        padding: 20px
+    }
+    .ant-radio-button-wrapper:hover{
+        color: $text-dark-number !important;    
+    }
+    .ant-radio-button-wrapper-checked:hover{
+        color: white !important;    
+    }
+
+    .ant-radio-button-wrapper-checked{
+        background: #f14b32 !important; 
+        color: #ffffff !important;
+        box-shadow: none !important;
+        font-weight: 600;
+        border-color: #f14b32 !important;
+        outline: 0px solid rgb(12, 29, 45) !important;
+        .time-receipt-month, .time-receipt-number, .time-receipt-day{
+            color: white !important;
+        }
+    }
+    .ant-radio-group{
+        width: 100%;
+    }
+    &-title{
+        font-size: 14px;
+        font-weight: 600;
+        color:  #474955;
+    }
+    &-subtitle{
+        padding: 18px 0 10px 0; 
+        font-size: 14px;
+        font-weight: 500;
+        color:  #737580;
+    }
+    .ant-radio-button-wrapper:not(:first-child)::before{
+        background-color: transparent !important; 
+    }
+    &-date{
+        width: 16%;
+        height: 54px !important;
+        border: 1px solid #e3e5ed !important;
+        border-radius: 5px !important;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        float: left;
+        margin-right: 2% !important;
+        margin-left: 2% !important;
+        padding: 3px !important;
+        .time-receipt-month{
+            line-height: 16px;
+            display: block;
+            font-size: 10px;
+            text-align: center;
+            color: $text-dark-number;
+        }
+        .time-receipt-number{
+            line-height: 16px;
+            display: block;
+            font-size: 16px;
+            text-align: center;
+            font-weight: 600;
+            color: $text-dark-number;
+        }
+        .time-receipt-day{
+            line-height: 16px;
+            display: block;
+            font-size: 10px;
+            text-align: center;
+            color: $text-dark-number;
+        }
+    }
+    &-hour{
+        width: 90%;
+        height: 28px;
+        border: 1px solid #e3e5ed;
+        border-radius: 5px;
+        margin: auto;
+        text-align: center;
+        padding-top: 3px;
+        font-size: 14px;
+        text-align: center;
+        color: #737580;
+        padding: 0 !important;
+    }
+}
+.ant-modal-confirm-info{
+    top: 30% !important;
+    .ant-modal-body{
+        padding: 0 !important;
+    }
+    .anticon-info-circle{
+        display: none !important;
+    }
+    .ant-modal-confirm-title{
+        padding: 12px 0px 0px 0px;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 18px;
+        font-weight: 700 !important;
+    }
+    .ant-modal-confirm-content{
+        margin: 0 !important;
+        p{
+            color: #737580;
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+    .ant-modal-confirm-btns{
+        padding: 8px;
+        float: none !important;
+        text-align: center !important;
+        border-top: 1px solid #e3e5ed;
+        button{
+            width: 100%;
+            background: transparent !important;
+            font-weight: 600 !important;
+            color: $qasir-orange !important;
+            border-color: transparent !important;
+        }
+    }
+}

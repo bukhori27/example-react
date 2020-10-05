@@ -1,0 +1,90 @@
+@import '../resources/mixins';
+
+.grid {
+    &__list-group {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #ffffff;
+        margin-top: 16px;
+        @media (max-width:414px) {
+            justify-content: space-between;
+        }
+    }
+    &__list-item {
+        margin-right: 16px;
+        text-align: center;
+        margin-bottom: 29px;
+        text-decoration: none;
+        @media (max-width: 320px) {
+            -webkit-box-flex: 0;
+            margin-right: -6px !important;
+            -ms-flex: 0 0 33.333333% !important;
+            flex: 0 0 33.333333% !important;
+            max-width: 50% !important;
+        }
+        @media (max-width: 414px) {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 28.333333%;
+            flex: 0 0 28.333333%;
+            max-width: 28.333333%;
+        }
+            &:hover {
+                span {
+                    color: $charcoal-grey;
+                }
+            }
+            span {
+                margin-top: 9px;
+                display: block;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 12px;
+                text-align: center;
+                color: $charcoal-grey;
+                width: 90%;
+                height: 13px;
+                margin: auto;
+            }
+            img {
+                height: 85px;
+                width: 85px;
+                display: block;
+                margin: auto;
+                margin-top: -8px;
+
+                @media (min-width: 768px) {
+                    height: 150px !important;
+                    width: 150px !important;  
+                }
+
+                @media (min-width: 992px) {
+                    height: 200px ;
+                    width: 200px ; 
+                }
+            }
+    }
+}
+//sm 
+
+@media (max-width: 768px) {
+    .grid__list-item img{
+        height: 85px !important;
+        width: 85px !important;       
+    }
+}
+//md
+@media (min-width: 768px) {
+    .grid__list-item img{
+        height: 150px !important;
+        width: 150px !important;       
+    }
+}
+//lg
+@media (min-width: 992px) {
+    .grid__list-item img{
+        height: 200px !important;
+        width: 200px !important;      
+    }
+}
